@@ -10,11 +10,11 @@
 
 		<form action="parse2.php" enctype="multipart/form-data" method="post">
 			Choose a file:<br>
-			<input type="file" name="datafile" size="40">
+			<input type="file" name="datafile" size="80">
 			<input type="submit" value="Parse the File">
 		</form>
 
 
-		
+
 	</body>
 </html>

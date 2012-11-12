@@ -375,36 +375,8 @@ ul {
 input {
 	font-size:1.2em;
 	height:1.4em;
-	width:20em;
+	width:30em;
 	
-}
-
-input.small {
-	font-size:1.2em;
-	height:1.4em;
-	width:5em;
-}
-
-label.login {
-	font-size:1.2em;
-	vertical-align:bottom;
-}
-
-
-input.login {
-	font-size:1.2em;
-	height:1.0em;
-	width:5em;
-	vertical-align:bottom;
-	margin-left:5px;
-	margin-right:5px;
-}
-
-
-textarea {
-	font-size:1.2em;
-	height:12em;
-	width:25em;
 }
 
 .button {
