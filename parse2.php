@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <h2>GCODE Parser</h2><i>v 0.1</i> <br /> <br />
         <?php    
             if ($_FILES["datafile"]["error"] > 0){
               echo "Error: " . $_FILES["datafile"]["error"] . "<br />";
@@ -56,16 +57,17 @@
                     $x = substr($info[$row]['x'], 1);
                     $y = substr($info[$row]['y'], 1);
                     
-                    $stringData = $x. " " .$y. " " .$z. "\n";
+                    $stringData = $x. "\t" .$y. "\t" .$z. "\n";
                     fwrite($fh, $stringData);
 
-                    echo $x. " " .$y. " " .$z;
+                    echo $x. "\t" .$y. "\t" .$z;
                     echo '<br />';
                 }
                 $oldZ = $z;
                 $i++;
             }
             fclose($fh);
+
         ?>
 </body>
 </html>

@@ -58,9 +58,7 @@ table {
 /*=================================================================================================================================================*/
 html { 
 	color: #000; 
-	font-family: 'Open Sans', sans-serif;
-	/*font: normal 75% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Lucida, Geneva, "Bitstream Vera Sans", Verdana, sans-serif;*/
-
+	font-family: 'Courier New', sans-serif;
 }
 
 body { 
@@ -376,7 +374,10 @@ input {
 	font-size:1.2em;
 	height:1.4em;
 	width:30em;
-	
+}
+input[type=submit] {
+  width:12em;
+  height:40px;
 }
 
 .button {
