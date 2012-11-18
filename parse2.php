@@ -37,36 +37,47 @@
             echo "<h2><a href='" .$outputFile. "'>" .$outputFile. "</a></h2><i>Option-Click -> Save target as</i><br /><br /><br /><br />";
             echo "<h3>File-Content: </h3>";
 
-            $oldZ = 0.0;
+            $oldZ = "0.00";
+            echo "<table border='1'>";
             foreach($rows as $row => $data) {
-                $row_data = explode(' ', $data);
+                $row_data = explode(" ", $data);
 
                 if ($row_data[0] == "G1") {
                     $info[$row]['g'] = $row_data[0];
                     $info[$row]['x'] = $row_data[1];
                     $info[$row]['y'] = $row_data[2];
                     $info[$row]['z'] = $row_data[3];
-                    $firstCharOfZ = $info[$row]['z'][0];
 
-                    if ($firstCharOfZ == "E" || $firstCharOfZ == "F" || $firstCharOfZ == null) {
+                    if ($info[$row]['z'] == "") {
                         $z = $oldZ;
                     } else {
-                        $z = substr($info[$row]['z'], 1);
+                        $firstCharOfZ = $info[$row]['z'][0];
+                        if ($firstCharOfZ == "E" || $firstCharOfZ == "F" || $firstCharOfZ == "") {
+                            $z = $oldZ;
+                        } else {
+                            $z = substr($info[$row]['z'], 1);
+                        }
                     }
 
                     $x = substr($info[$row]['x'], 1);
                     $y = substr($info[$row]['y'], 1);
                     
-                    $stringData = $x. "\t" .$y. "\t" .$z. "\n";
-                    fwrite($fh, $stringData);
+                    $stringData = $x. " \t " .$y. " \t " .$z. "\r\n";
+                    $utf8StringData = utf8_encode($stringData);
+                    fwrite($fh, $utf8StringData);
 
-                    echo $x. "\t" .$y. "\t" .$z;
-                    echo '<br />';
+
+                    echo "<tr>";
+                        echo "<td>". $x ."</td>";
+                        echo "<td>". $y ."</td>";
+                        echo "<td>". $z ."</td>";
+                    echo "</tr>";
                 }
                 $oldZ = $z;
                 $i++;
             }
             fclose($fh);
+            echo "</table>";
 
         ?>
 </body>
