@@ -1,14 +1,23 @@
 10
 
 dir
+<<<<<<< HEAD
 639
+=======
+641
+>>>>>>> Fehlersuche geht weiter
 svn+ssh://r_anna/var/lib/svnroot/austrianmultimedia/trunk/GCODEParser
 svn+ssh://r_anna/var/lib/svnroot/austrianmultimedia
 
 
 
+<<<<<<< HEAD
 2012-11-12T19:23:47.169808Z
 639
+=======
+2012-11-14T12:28:59.818016Z
+640
+>>>>>>> Fehlersuche geht weiter
 raphael
 
 
@@ -31,6 +40,7 @@ dir
 
 parse2.php
 file
+<<<<<<< HEAD
 640
 
 
@@ -39,6 +49,16 @@ file
 ea66c2583afa788682216e7136528515
 2012-11-14T12:28:59.818016Z
 640
+=======
+642
+
+
+
+2012-11-18T18:53:33.000000Z
+dbd779cd1dd998c4f749d31381abd711
+2012-11-18T18:58:19.264643Z
+642
+>>>>>>> Fehlersuche geht weiter
 raphael
 
 
@@ -61,7 +81,11 @@ raphael
 
 
 
+<<<<<<< HEAD
 2844
+=======
+3284
+>>>>>>> Fehlersuche geht weiter
 
 1_small_testblock_export.gcode
 file
@@ -69,7 +93,11 @@ file
 
 
 
+<<<<<<< HEAD
 2012-11-14T12:18:50.000000Z
+=======
+2012-11-12T19:24:41.000000Z
+>>>>>>> Fehlersuche geht weiter
 0aa175210232bafeb5ea4e373d34b3d9
 2012-11-12T19:23:47.169808Z
 639
@@ -103,7 +131,11 @@ file
 
 
 
+<<<<<<< HEAD
 2012-11-14T12:18:50.000000Z
+=======
+2012-11-12T19:24:41.000000Z
+>>>>>>> Fehlersuche geht weiter
 aa7f0a16ead301a0bd5b5b054a949d34
 2012-11-12T19:23:47.169808Z
 639
@@ -140,7 +172,11 @@ file
 
 
 
+<<<<<<< HEAD
 2012-11-14T12:18:50.000000Z
+=======
+2012-11-12T19:24:41.000000Z
+>>>>>>> Fehlersuche geht weiter
 de965912689e1893782a5faccde1f899
 2012-11-12T19:23:47.169808Z
 639

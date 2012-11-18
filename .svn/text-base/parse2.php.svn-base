@@ -37,36 +37,73 @@
             echo "<h2><a href='" .$outputFile. "'>" .$outputFile. "</a></h2><i>Option-Click -> Save target as</i><br /><br /><br /><br />";
             echo "<h3>File-Content: </h3>";
 
+<<<<<<< HEAD
             $oldZ = 0.0;
             foreach($rows as $row => $data) {
                 $row_data = explode(' ', $data);
+=======
+            $oldZ = "0.00";
+            echo "<table border='1'>";
+            foreach($rows as $row => $data) {
+                $row_data = explode(" ", $data);
+>>>>>>> Fehlersuche geht weiter
 
                 if ($row_data[0] == "G1") {
                     $info[$row]['g'] = $row_data[0];
                     $info[$row]['x'] = $row_data[1];
                     $info[$row]['y'] = $row_data[2];
                     $info[$row]['z'] = $row_data[3];
+<<<<<<< HEAD
                     $firstCharOfZ = $info[$row]['z'][0];
 
                     if ($firstCharOfZ == "E" || $firstCharOfZ == "F" || $firstCharOfZ == "") {
                         $z = $oldZ;
                     } else {
                         $z = substr($info[$row]['z'], 1);
+=======
+
+                    if ($info[$row]['z'] == "") {
+                        $z = $oldZ;
+                    } else {
+                        $firstCharOfZ = $info[$row]['z'][0];
+                        if ($firstCharOfZ == "E" || $firstCharOfZ == "F" || $firstCharOfZ == "") {
+                            $z = $oldZ;
+                        } else {
+                            $z = substr($info[$row]['z'], 1);
+                        }
+>>>>>>> Fehlersuche geht weiter
                     }
 
                     $x = substr($info[$row]['x'], 1);
                     $y = substr($info[$row]['y'], 1);
                     
+<<<<<<< HEAD
                     $stringData = $x. "\t" .$y. "\t" .$z. "\n";
                     fwrite($fh, $stringData);
 
                     echo $x. "\t" .$y. "\t" .$z;
                     echo '<br />';
+=======
+                    $stringData = $x. " \t " .$y. " \t " .$z. "\r\n";
+                    $utf8StringData = utf8_encode($stringData);
+                    fwrite($fh, $utf8StringData);
+
+
+                    echo "<tr>";
+                        echo "<td>". $x ."</td>";
+                        echo "<td>". $y ."</td>";
+                        echo "<td>". $z ."</td>";
+                    echo "</tr>";
+>>>>>>> Fehlersuche geht weiter
                 }
                 $oldZ = $z;
                 $i++;
             }
             fclose($fh);
+<<<<<<< HEAD
+=======
+            echo "</table>";
+>>>>>>> Fehlersuche geht weiter
 
         ?>
 </body>

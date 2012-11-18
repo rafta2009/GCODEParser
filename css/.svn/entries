@@ -1,7 +1,11 @@
 10
 
 dir
+<<<<<<< HEAD
 639
+=======
+641
+>>>>>>> Fehlersuche geht weiter
 svn+ssh://r_anna/var/lib/svnroot/austrianmultimedia/trunk/GCODEParser/css
 svn+ssh://r_anna/var/lib/svnroot/austrianmultimedia
 
@@ -28,6 +32,7 @@ raphael
 
 style.css
 file
+<<<<<<< HEAD
 
 
 
@@ -36,6 +41,16 @@ file
 367ee3cf3c9939a39fff6f509e6222ac
 2012-11-12T19:23:47.169808Z
 639
+=======
+642
+
+
+
+2012-11-18T18:55:44.000000Z
+173b6b1f025a6b5f975ddc37ee5fee67
+2012-11-18T18:58:19.264643Z
+642
+>>>>>>> Fehlersuche geht weiter
 raphael
 
 
@@ -58,5 +73,9 @@ raphael
 
 
 
+<<<<<<< HEAD
 6118
+=======
+6190
+>>>>>>> Fehlersuche geht weiter
 
