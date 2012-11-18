@@ -77,7 +77,7 @@
                 $i++;
             }
             fclose($fh);
-            echo "</table>";
+            echo "</table>"; 
 
         ?>
 </body>
